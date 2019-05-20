@@ -1,0 +1,1368 @@
+{
+  "matching_results": 1020,
+  "session_token": "1_B8YIbojrEg99JiK4eeNMtZ5qTk",
+  "aggregations": [
+    {
+      "type": "term",
+      "field": "hotel",
+      "count": 50,
+      "results": [
+        {
+          "key": "414_hotel",
+          "matching_results": 168,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.6327103892215569
+            }
+          ]
+        },
+        {
+          "key": "60_thompson",
+          "matching_results": 148,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.4550364797297297
+            }
+          ]
+        },
+        {
+          "key": "andrews_hotel",
+          "matching_results": 126,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.6124189761904761
+            }
+          ]
+        },
+        {
+          "key": "adante_hotel",
+          "matching_results": 116,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.3327573620689655
+            }
+          ]
+        },
+        {
+          "key": "6_columbus",
+          "matching_results": 104,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.4884786346153846
+            }
+          ]
+        },
+        {
+          "key": "70_park_avenue_hotel_a_kimpton_hotel",
+          "matching_results": 61,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.4732942295081967
+            }
+          ]
+        },
+        {
+          "key": "argonaut_hotel_a_kimpton_hotel",
+          "matching_results": 57,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.6579180877192983
+            }
+          ]
+        },
+        {
+          "key": "amalfi_hotel_chicago",
+          "matching_results": 55,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.6562148
+            }
+          ]
+        },
+        {
+          "key": "americas_best_value_inn_golden_gate",
+          "matching_results": 36,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.1623520833333333
+            }
+          ]
+        },
+        {
+          "key": "abigail_hotel",
+          "matching_results": 26,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": -0.15970392307692308
+            }
+          ]
+        },
+        {
+          "key": "alexis_park_san_francisco",
+          "matching_results": 21,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.5693109523809523
+            }
+          ]
+        },
+        {
+          "key": "alpha_inn_and_suites_san_francisco",
+          "matching_results": 21,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": -0.20142433333333332
+            }
+          ]
+        },
+        {
+          "key": "aida_hotel",
+          "matching_results": 19,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": -0.31725605263157897
+            }
+          ]
+        },
+        {
+          "key": "america_s_best_inn_san_francisco",
+          "matching_results": 18,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.050892611111111125
+            }
+          ]
+        },
+        {
+          "key": "americas_best_value_inn_suites_soma",
+          "matching_results": 13,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.2257223076923077
+            }
+          ]
+        },
+        {
+          "key": "ansonia_abby_hotel",
+          "matching_results": 13,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.07708200000000001
+            }
+          ]
+        },
+        {
+          "key": "alexander_inn",
+          "matching_results": 8,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": -0.39384699999999995
+            }
+          ]
+        },
+        {
+          "key": "3_west_club",
+          "matching_results": 5,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": 0.5624666
+            }
+          ]
+        },
+        {
+          "key": "americas_best_value_inn_suites_union_square",
+          "matching_results": 5,
+          "aggregations": [
+            {
+              "type": "average",
+              "field": "enriched_text.sentiment.document.score",
+              "value": -0.4108632
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "ef0fe8a6e51105e58020b862d99befe4",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "I love love love this hotel!When we arrived we were upgraded to a bay bridge view room! We also had a lovely bottle of red in the room upon arrivals (Were there to celebrate boyfriends birthday) The room was huge! Absolutly immaculate! Bed comfy! Bathroom again huge! It did take us a while to walk to the room from reception! This hotel is large!The only negative would be most of the things (food wise) in the mini bar were out of date! Lovely bar called Jack Murphys about 3 doors along and the best burgers in SF from In Out Burger about a 5 min walk away!Overall loved the hotel though and would deffo stay here again!",
+      "date": "2009-10-18",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.7636,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Jack Murphys",
+            "relevance": 0.951363,
+            "type": "Person"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "5 min",
+            "relevance": 0.951363,
+            "type": "Quantity"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Hotel",
+            "relevance": 0.938227,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          },
+          {
+            "text": "Love",
+            "relevance": 0.932431,
+            "dbpedia_resource": "http://dbpedia.org/resource/Love"
+          },
+          {
+            "text": "San Francisco",
+            "relevance": 0.741721,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+          },
+          {
+            "text": "Mini-bar",
+            "relevance": 0.731081,
+            "dbpedia_resource": "http://dbpedia.org/resource/Mini-bar"
+          },
+          {
+            "text": "English-language films",
+            "relevance": 0.670261,
+            "dbpedia_resource": "http://dbpedia.org/resource/English-language_films"
+          },
+          {
+            "text": "Public house",
+            "relevance": 0.669529,
+            "dbpedia_resource": "http://dbpedia.org/resource/Public_house"
+          },
+          {
+            "text": "Burger",
+            "relevance": 0.627417,
+            "dbpedia_resource": "http://dbpedia.org/resource/Burger"
+          },
+          {
+            "text": "Hamburger",
+            "relevance": 0.610029,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hamburger"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.797776,
+            "label": "/travel/hotels"
+          },
+          {
+            "score": 0.765537,
+            "label": "/food and drink/food"
+          },
+          {
+            "score": 0.678912,
+            "label": "/food and drink/food/fast food"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "48898b9269a6de396d6396abd11f140fab09b062",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1408.json",
+        "file_type": "json"
+      },
+      "title": "WOW"
+    },
+    {
+      "id": "1e461730135b5d281e2a7bae00811c81",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "This was our first visit to SF and the location of the Argonaut is excellent. The staff were very friendly and the rooms were spotless and clean. I would suggest a city tour to learn some interesting facts then get out and about on foot &amp; cable car. Opposite the hotel is a Maritime museum which is really nice to stroll around. A visit to Alcatrez is a must, not what I expected at all. Would definitely stay again just on the edge of all the hustle and bustle.",
+      "date": "2009-10-25",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.601783,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.768445,
+              "label": "positive"
+            },
+            "text": "Maritime museum",
+            "relevance": 0.981275,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.328508,
+              "label": "positive"
+            },
+            "text": "Alcatrez",
+            "relevance": 0.672827,
+            "type": "Location",
+            "disambiguation": {
+              "subtype": [
+                "City"
+              ]
+            }
+          }
+        ],
+        "concepts": [
+          {
+            "text": "San Francisco",
+            "relevance": 0.913336,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.590168,
+            "label": "/travel/hotels"
+          },
+          {
+            "score": 0.565249,
+            "label": "/business and industrial/business operations/business plans"
+          },
+          {
+            "score": 0.564383,
+            "label": "/art and entertainment/shows and events"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "1e017549928fcc4f3514a619c6921c9e2739975d",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1406.json",
+        "file_type": "json"
+      },
+      "title": "Wonderful location for a first time visit."
+    },
+    {
+      "id": "a3eb3c1ddf64c17011fad359bc1b9bbb",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "Recently returned from 3 days at the Argonaut Hotel with my adult son. Excellent experience. Rooms were very large, comfortable and nicely appointed. Location is excellent for seeing all San Francisco has to offer. Bike rental is around the corner if you would like to bike over the Golden Gate bridge. Nice wine reception each evening from 5-6 pm. Booked through 1800hotels and got a great rate. Have stayed in San Francisco 6 previous times but this is my favorite hotel of all I've stayed in. Blue Mermaid restaurant has a nice continental breakfast included with the room.",
+      "date": "2009-10-29",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.919646,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 2,
+            "sentiment": {
+              "score": 0.364996,
+              "label": "positive"
+            },
+            "text": "San Francisco",
+            "relevance": 0.9213,
+            "type": "Location",
+            "disambiguation": {
+              "subtype": [
+                "PoliticalDistrict",
+                "AdministrativeDivision",
+                "GovernmentalJurisdiction",
+                "PlaceWithNeighborhoods",
+                "USCounty",
+                "FilmScreeningVenue",
+                "City"
+              ],
+              "name": "San Francisco",
+              "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.504799,
+              "label": "positive"
+            },
+            "text": "Argonaut Hotel",
+            "relevance": 0.723978,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Golden Gate bridge",
+            "relevance": 0.578372,
+            "type": "Facility",
+            "disambiguation": {
+              "subtype": [
+                "Bridge"
+              ],
+              "name": "Golden Gate Bridge",
+              "dbpedia_resource": "http://dbpedia.org/resource/Golden_Gate_Bridge"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.847172,
+              "label": "positive"
+            },
+            "text": "Blue Mermaid",
+            "relevance": 0.497181,
+            "type": "Company"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "3 days",
+            "relevance": 0.497181,
+            "type": "Quantity"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Golden Gate",
+            "relevance": 0.950126,
+            "dbpedia_resource": "http://dbpedia.org/resource/Golden_Gate"
+          },
+          {
+            "text": "Marin County, California",
+            "relevance": 0.901598,
+            "dbpedia_resource": "http://dbpedia.org/resource/Marin_County,_California"
+          },
+          {
+            "text": "San Francisco Bay Area",
+            "relevance": 0.818809,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco_Bay_Area"
+          },
+          {
+            "text": "California State Route 1",
+            "relevance": 0.812202,
+            "dbpedia_resource": "http://dbpedia.org/resource/California_State_Route_1"
+          },
+          {
+            "text": "San Francisco",
+            "relevance": 0.753,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+          },
+          {
+            "text": "California",
+            "relevance": 0.736569,
+            "dbpedia_resource": "http://dbpedia.org/resource/California"
+          },
+          {
+            "text": "Golden Gate Bridge",
+            "relevance": 0.717838,
+            "dbpedia_resource": "http://dbpedia.org/resource/Golden_Gate_Bridge"
+          },
+          {
+            "text": "San Francisco Bay",
+            "relevance": 0.659918,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco_Bay"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.911154,
+            "label": "/automotive and vehicles/bicycles and accessories"
+          },
+          {
+            "score": 0.786555,
+            "label": "/automotive and vehicles/motorcycles"
+          },
+          {
+            "score": 0.703514,
+            "label": "/automotive and vehicles/bicycles and accessories/mountain bikes"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "844254b7fcd331253937bc1d8212a94cbc25d0a5",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1403.json",
+        "file_type": "json"
+      },
+      "title": "Pleasant experience"
+    },
+    {
+      "id": "df45f5658143669d6efd8bed16dfc165",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "The Argonaut is a great place to stay for families touring San Francisco because it is a clean and hospitable hotel in a child-friendly part of town. The hotel has a nice Maritime Museum inside, and the Cannery with restaurants and Norman's ice cream are literally right outside your window. The cable car turn around, Hyde Street Pier (my kids loved this!), Ghiradelli Square, Pier 39 and Fisherman's Wharf are all within a few blocks walk. Starbucks is at the back of the building, and Walgreen's and Trader Joe's are about a 4 to 5 block walk. We even walked to the Exploratorium ( this museum is a MUST DO for kids), which is a fairly level and beautiful several mile walk.  We chose the Argonaut because of its location, and for the fact that we wanted an upscale hotel without all the stuffiness. The hotel's decor is fun and playful. The rooms at the Argonaut are spacious and clean, plus the beds are uber comfy. Our room faced out into the Cannery courtyard, and at night we could listen to the featured outdoor live entertainment as we settled into bed. We considered this a plus, as we were so wiped out at the end of the day and our beds were so comfortable, not much would have kept us awake. The staff is friendly and helpful, although except for the doormen, not quite at the level found at most 4-star hotels. We paid a nightly rate of about 60% of the rack rate, and I think that was a good price for this hotel. The Argonaut gave me my money's worth and is definitely the best hotel on Fisherman's Wharf.",
+      "date": "2009-10-30",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.807034,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 6,
+            "sentiment": {
+              "score": 0.874737,
+              "label": "positive"
+            },
+            "text": "Argonaut",
+            "relevance": 0.824085,
+            "type": "Organization"
+          },
+          {
+            "count": 2,
+            "sentiment": {
+              "score": 0.90406,
+              "label": "positive"
+            },
+            "text": "Fisherman's Wharf",
+            "relevance": 0.459423,
+            "type": "GeographicFeature"
+          },
+          {
+            "count": 2,
+            "sentiment": {
+              "score": 0.61555,
+              "label": "positive"
+            },
+            "text": "Maritime Museum",
+            "relevance": 0.351458,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.443417,
+              "label": "positive"
+            },
+            "text": "Hyde Street Pier",
+            "relevance": 0.33054,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.929237,
+              "label": "positive"
+            },
+            "text": "San Francisco",
+            "relevance": 0.273322,
+            "type": "Location",
+            "disambiguation": {
+              "subtype": [
+                "PoliticalDistrict",
+                "AdministrativeDivision",
+                "GovernmentalJurisdiction",
+                "PlaceWithNeighborhoods",
+                "USCounty",
+                "FilmScreeningVenue",
+                "City"
+              ],
+              "name": "San Francisco",
+              "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Starbucks",
+            "relevance": 0.268171,
+            "type": "Company",
+            "disambiguation": {
+              "subtype": [],
+              "name": "Starbucks",
+              "dbpedia_resource": "http://dbpedia.org/resource/Starbucks"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Norman",
+            "relevance": 0.241848,
+            "type": "Person"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Trader Joe",
+            "relevance": 0.236539,
+            "type": "Person"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.501168,
+              "label": "positive"
+            },
+            "text": "Ghiradelli Square",
+            "relevance": 0.234946,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Walgreen",
+            "relevance": 0.227758,
+            "type": "Company",
+            "disambiguation": {
+              "subtype": [],
+              "name": "Walgreens",
+              "dbpedia_resource": "http://dbpedia.org/resource/Walgreens"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "60%",
+            "relevance": 0.227758,
+            "type": "Quantity"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "San Francisco",
+            "relevance": 0.916791,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+          },
+          {
+            "text": "Hotel",
+            "relevance": 0.839103,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          },
+          {
+            "text": "Hotels",
+            "relevance": 0.747186,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotels"
+          },
+          {
+            "text": "Hospitality industry",
+            "relevance": 0.680274,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hospitality_industry"
+          },
+          {
+            "text": "Automobile",
+            "relevance": 0.666423,
+            "dbpedia_resource": "http://dbpedia.org/resource/Automobile"
+          },
+          {
+            "text": "Lincoln Highway",
+            "relevance": 0.663023,
+            "dbpedia_resource": "http://dbpedia.org/resource/Lincoln_Highway"
+          },
+          {
+            "text": "Golden Gate Bridge",
+            "relevance": 0.61672,
+            "dbpedia_resource": "http://dbpedia.org/resource/Golden_Gate_Bridge"
+          },
+          {
+            "text": "San Francisco Maritime National Historical Park",
+            "relevance": 0.608595,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco_Maritime_National_Historical_Park"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.849575,
+            "label": "/travel/hotels"
+          },
+          {
+            "score": 0.557557,
+            "label": "/food and drink/food"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "37f060ac0413b8dd29c540992d7fc621aa3574fd",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1401.json",
+        "file_type": "json"
+      },
+      "title": "Ideal hotel for families"
+    },
+    {
+      "id": "64ee56e89a46731b6f64472c087d9838",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "Good location: opposite to Maritime National Historical Park and next to the Cable Cars. Nice spacious room, good bed, large bathroom. BIG disadvantage: COLD shower. Not only in the morning at 'rushhour', but also late at night. So there seems to be a problem with the hot water supply.We didn't have breakfast at the restaurant, but there is plenty to choose from in walking distance. Valet parking is very expensive (43 dollar p/n). When you become a Kimpton member (for free via their internetsite) you can book a pakkage with parking. Then parking is only 1 dollar p/n.",
+      "date": "2009-11-01",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.464455,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 1,
+            "sentiment": {
+              "score": -0.234452,
+              "label": "negative"
+            },
+            "text": "Maritime National Historical Park",
+            "relevance": 0.898084,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Kimpton",
+            "relevance": 0.744682,
+            "type": "Company"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "43 dollar",
+            "relevance": 0.744682,
+            "type": "Quantity"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "1 dollar",
+            "relevance": 0.744682,
+            "type": "Quantity"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Valet parking",
+            "relevance": 0.939077,
+            "dbpedia_resource": "http://dbpedia.org/resource/Valet_parking"
+          },
+          {
+            "text": "Parking",
+            "relevance": 0.673366,
+            "dbpedia_resource": "http://dbpedia.org/resource/Parking"
+          },
+          {
+            "text": "Late at Night",
+            "relevance": 0.587261,
+            "dbpedia_resource": "http://dbpedia.org/resource/Late_at_Night"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.741191,
+            "label": "/food and drink/food/breakfast foods"
+          },
+          {
+            "score": 0.648881,
+            "label": "/automotive and vehicles/cars"
+          },
+          {
+            "score": 0.580068,
+            "label": "/real estate/buying and selling homes"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "ab612d67c43390a05064570e8ba929c97e85270f",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1400.json",
+        "file_type": "json"
+      },
+      "title": "Nice locations cold shower"
+    },
+    {
+      "id": "c33b5a083be38fc925ed595f15ac59d7",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "We just returned from a long weekend in San Francisco, staying at the Argonaut. The location is perfect. It is a couple blocks away from the huge loud crowds around Pier 39, yet just a short block to the cable car turnaround and Irish coffee at the Buena Vista. Although we were petless this weekend, we met many nice dogs during our stay, including several large dogs (like ours). The hotel is across the street from a dog-friendly park with a beach - terrific for dogs as well as kids. The maritime museum, with many boats to board, is also across the street. Ghirardelli Square is also two blocks away ( though sadly there aren't many fun places there anymore).The hotel itself is spotlessly clean and very comfortable. Our room faced an interior courtyard so there were no views - but no noise either, which we appreciated. The room was equipped with a coffeemaker (with complimentary Starbucks coffee!) iron &amp; ironing board, power strip with lots of outlets for laptops and phone chargers (why don't all hotels think of this?) and complimentary wi-fi. Very people-friendly!I've spent a lot more on hotels and received a lot less. The only downside is that parking is VERY expensive - but there is excellent nearby public transportation, so don't bring a car. And the staff is very friendly too. I'm sure we'll be back - I just can't think of a better place to stay in San Francisco...",
+      "date": "2009-08-21",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.506362,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 2,
+            "sentiment": {
+              "score": -0.375124,
+              "label": "negative"
+            },
+            "text": "San Francisco",
+            "relevance": 0.782397,
+            "type": "Location",
+            "disambiguation": {
+              "subtype": [
+                "PoliticalDistrict",
+                "AdministrativeDivision",
+                "GovernmentalJurisdiction",
+                "PlaceWithNeighborhoods",
+                "USCounty",
+                "FilmScreeningVenue",
+                "City"
+              ],
+              "name": "San Francisco",
+              "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+            }
+          },
+          {
+            "count": 2,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Ghirardelli Square",
+            "relevance": 0.630237,
+            "type": "Facility",
+            "disambiguation": {
+              "subtype": [
+                "Location",
+                "TouristAttraction",
+                "Building"
+              ],
+              "name": "Ghirardelli Square",
+              "dbpedia_resource": "http://dbpedia.org/resource/Ghirardelli_Square"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.470106,
+              "label": "positive"
+            },
+            "text": "Starbucks",
+            "relevance": 0.48613,
+            "type": "Company",
+            "disambiguation": {
+              "subtype": [],
+              "name": "Starbucks",
+              "dbpedia_resource": "http://dbpedia.org/resource/Starbucks"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "maritime museum",
+            "relevance": 0.441339,
+            "type": "Facility"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Coffee",
+            "relevance": 0.944758,
+            "dbpedia_resource": "http://dbpedia.org/resource/Coffee"
+          },
+          {
+            "text": "Hotel",
+            "relevance": 0.764509,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          },
+          {
+            "text": "Coffeehouse",
+            "relevance": 0.711676,
+            "dbpedia_resource": "http://dbpedia.org/resource/Coffeehouse"
+          },
+          {
+            "text": "Starbucks",
+            "relevance": 0.704704,
+            "dbpedia_resource": "http://dbpedia.org/resource/Starbucks"
+          },
+          {
+            "text": "Las Vegas Strip",
+            "relevance": 0.634857,
+            "dbpedia_resource": "http://dbpedia.org/resource/Las_Vegas_Strip"
+          },
+          {
+            "text": "San Francisco",
+            "relevance": 0.620725,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+          },
+          {
+            "text": "Hotels",
+            "relevance": 0.598759,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotels"
+          },
+          {
+            "text": "Transport",
+            "relevance": 0.58018,
+            "dbpedia_resource": "http://dbpedia.org/resource/Transport"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.997625,
+            "label": "/pets/dogs"
+          },
+          {
+            "score": 0.938964,
+            "label": "/travel/hotels"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "def8bd5e6723520520dd275da6c4ae8fde22182d",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1441.json",
+        "file_type": "json"
+      },
+      "title": "Pet and Kid Friendly - and great for grownups too!"
+    },
+    {
+      "id": "021ac873480c21ac937805475825e7b3",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "We had the package that included parking, breakfast, and a cable car pass. It was well worth the small upcharge as the breakfast was wonderful, the parking would have been expensive, and the cable car pass was for 3 days. The hotel is in a great location and everyone was helpful and nice. Can't wait to get back!!!",
+      "date": "2009-08-25",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.799614,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "3 days",
+            "relevance": 0.01,
+            "type": "Quantity"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Hotel",
+            "relevance": 0.91136,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          },
+          {
+            "text": "Bed and breakfast",
+            "relevance": 0.893113,
+            "dbpedia_resource": "http://dbpedia.org/resource/Bed_and_breakfast"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.999991,
+            "label": "/food and drink/food/breakfast foods"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "74fdc8137d96e91115c6008abfe0c2dbb78759c4",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1440.json",
+        "file_type": "json"
+      },
+      "title": "Wonderful!!!"
+    },
+    {
+      "id": "d079c1a7a1466ea24996f236ef7509bd",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "Only stayed here two nights. Wish it could have been longer as we love San Francisco. Have stayed at both the Holiday Inns in the past, but decided to treat ourselves to the Argonaut after all its great reviews.After a bit of a mix up when the receptionist thought we'd only reserved one room instead of two, we were pleasantly surprised to find we were entitled to breakfast on the two mornings.It was only juice, tea or coffee, a bowl of fruit and a choice of pastry or toast but it was all right for nothing. The complementary wine in the evening was a nice touch even though we didn't like the wine. The rooms were very smart and actually looked like the photos on the hotel web site. Internet was free in the room , something other hotels should consider in this day and age.My only gripe was that our view was over a courtyard to rooms with shutters at the windows which ,sort of, made me think of Alcatraz!I think you have to pay extra for any decent view.The cost of the valet carparking is rather extortionate, but so was that at both Holiday Inns. Can certainly recommend this hotel for its good points and excellent locality and would definitely go back, but would try to get a better room ( with a view )next time.",
+      "date": "2009-08-26",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.615769,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 2,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Holiday Inns",
+            "relevance": 0.968667,
+            "type": "Facility"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": -0.424006,
+              "label": "negative"
+            },
+            "text": "San Francisco",
+            "relevance": 0.477696,
+            "type": "Location",
+            "disambiguation": {
+              "subtype": [
+                "PoliticalDistrict",
+                "AdministrativeDivision",
+                "GovernmentalJurisdiction",
+                "PlaceWithNeighborhoods",
+                "USCounty",
+                "FilmScreeningVenue",
+                "City"
+              ],
+              "name": "San Francisco",
+              "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+            }
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Hotel",
+            "relevance": 0.961337,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          },
+          {
+            "text": "Bed and breakfast",
+            "relevance": 0.722534,
+            "dbpedia_resource": "http://dbpedia.org/resource/Bed_and_breakfast"
+          },
+          {
+            "text": "Hampton Inn",
+            "relevance": 0.679199,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hampton_Inn"
+          },
+          {
+            "text": "Hotels",
+            "relevance": 0.662914,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotels"
+          },
+          {
+            "text": "Inn",
+            "relevance": 0.649985,
+            "dbpedia_resource": "http://dbpedia.org/resource/Inn"
+          },
+          {
+            "text": "Public house",
+            "relevance": 0.627641,
+            "dbpedia_resource": "http://dbpedia.org/resource/Public_house"
+          },
+          {
+            "text": "Tea",
+            "relevance": 0.589183,
+            "dbpedia_resource": "http://dbpedia.org/resource/Tea"
+          },
+          {
+            "text": "Thought",
+            "relevance": 0.569731,
+            "dbpedia_resource": "http://dbpedia.org/resource/Thought"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.991759,
+            "label": "/food and drink/beverages/alcoholic beverages/wine"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "15f7e6478d7753b3efeec809c852ce2c9a7a865d",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1439.json",
+        "file_type": "json"
+      },
+      "title": "a view would be nice!"
+    },
+    {
+      "id": "a383c4684380bab163f8ee8cd30a0dfa",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "We (my partner &amp; daughter 18 yrs) stayed three nights in one room. We had a nice, large room, clean and comfortable. Valet parking was well organised and other services swift and kind (bell-boy, concierge). We visited once the complimentary wine party, wich was nice meeting other people. Price - quality excellent.",
+      "date": "2009-08-31",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.835022,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.306402,
+              "label": "positive"
+            },
+            "text": "partner",
+            "relevance": 0.993608,
+            "type": "JobTitle"
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Valet parking",
+            "relevance": 0.94772,
+            "dbpedia_resource": "http://dbpedia.org/resource/Valet_parking"
+          },
+          {
+            "text": "Management",
+            "relevance": 0.756157,
+            "dbpedia_resource": "http://dbpedia.org/resource/Management"
+          },
+          {
+            "text": "Parking",
+            "relevance": 0.646,
+            "dbpedia_resource": "http://dbpedia.org/resource/Parking"
+          },
+          {
+            "text": "Hotel",
+            "relevance": 0.614923,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.997899,
+            "label": "/food and drink/beverages/alcoholic beverages/wine"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "43b7f9b6542cdc4da732aa1fb768e19fde4674f9",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1437.json",
+        "file_type": "json"
+      },
+      "title": "Good stay!"
+    },
+    {
+      "id": "29789817ad86bb28787f32f636a4c292",
+      "score": 1,
+      "city": "san-francisco",
+      "hotel": "argonaut_hotel_a_kimpton_hotel",
+      "year": "2009",
+      "text": "After weighing up boutique hotels downtown with high parking costs vs staying at the Argonaut. w decided on it for three nights-booked by phone and did the parking, breakfast, cable car ticket package. It was a bit of a splurge for us, but worth every penny! This place was so charming and enjoyable. From the minute we met Steve, the valet, we knew it was going to be a good experience! All the staff seemed really well chosen and went out of their way to help, but Steve really made it special! Our room was lovely! We loved the nautical theme and attention to detail - alot of thought has gone into the restoration of this old cannery building and the decorating. So clean and well maintained! Starbucks coffee and Aveda toiletries and a well stocked mini bar (right down to telescopes for the kids!) with prices we thought weren't too bad at all. We were lucky to have a window with a view to the lovely colors and liveliness of the courtyard and even had a bit of a city view with the Transamerica building right there. Yes, there was music playing throughout the day, but if you shut your windows you heard nothing. We did have a noisy baby crying for awhile the first night and it was pretty loud, but it stopped, which was the important thing! Not too keen on the large dogs trotting about with their owners, we must say, and I do suffer from allergies, but we had asked for a non pet room and I was fine.  The breakfast was excellent....one entree, juice coffee came with our package. We also dined in the restaurant and had a few drinks one evening....all good. I must say though that if they opened the room up without that double row of tables in the middle it would be better. If you end up on the non-bar side, it lacks ambience. Super location. Helpful staff - they had stamps to sell and mailed the postcards for me. A tip from the concierge to get over the the City Wide Tours around the corner for around ten-ish enabled us to score some Alcatraz tickets (with the purchase of their tours of course) - which was great, as they were sold out for the next few days.It was for a late run out to the island which limited your time there, but it worked. The tours with these open double decker buses were great. We did the City tour, the park tour and the run to Sausalito and then we took the ferry back. The wine hour they lay on daily was very generous and we had fun getting to know other guests. Yes, there were lots of families and kids and we were a couple, but there were others like us too and everyone was very happy to be there, you could tell.We would highly recomment the Hotel Argonaut!",
+      "date": "2009-09-02",
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "score": 0.714143,
+            "label": "positive"
+          }
+        },
+        "entities": [
+          {
+            "count": 3,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "City Wide Tours",
+            "relevance": 0.799722,
+            "type": "Facility"
+          },
+          {
+            "count": 2,
+            "sentiment": {
+              "score": 0.807766,
+              "label": "positive"
+            },
+            "text": "Steve",
+            "relevance": 0.70804,
+            "type": "Person"
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0,
+              "label": "neutral"
+            },
+            "text": "Sausalito",
+            "relevance": 0.545406,
+            "type": "Location",
+            "disambiguation": {
+              "subtype": [
+                "AdministrativeDivision",
+                "City"
+              ],
+              "name": "Sausalito, California",
+              "dbpedia_resource": "http://dbpedia.org/resource/Sausalito,_California"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.631724,
+              "label": "positive"
+            },
+            "text": "Starbucks",
+            "relevance": 0.524967,
+            "type": "Company",
+            "disambiguation": {
+              "subtype": [],
+              "name": "Starbucks",
+              "dbpedia_resource": "http://dbpedia.org/resource/Starbucks"
+            }
+          },
+          {
+            "count": 1,
+            "sentiment": {
+              "score": 0.631724,
+              "label": "positive"
+            },
+            "text": "Aveda",
+            "relevance": 0.479853,
+            "type": "Company",
+            "disambiguation": {
+              "subtype": [],
+              "name": "Aveda",
+              "dbpedia_resource": "http://dbpedia.org/resource/Aveda"
+            }
+          }
+        ],
+        "concepts": [
+          {
+            "text": "Hotel",
+            "relevance": 0.968968,
+            "dbpedia_resource": "http://dbpedia.org/resource/Hotel"
+          },
+          {
+            "text": "Coffee",
+            "relevance": 0.755885,
+            "dbpedia_resource": "http://dbpedia.org/resource/Coffee"
+          },
+          {
+            "text": "Starbucks",
+            "relevance": 0.573008,
+            "dbpedia_resource": "http://dbpedia.org/resource/Starbucks"
+          },
+          {
+            "text": "San Francisco",
+            "relevance": 0.55651,
+            "dbpedia_resource": "http://dbpedia.org/resource/San_Francisco"
+          },
+          {
+            "text": "Double-decker bus",
+            "relevance": 0.496541,
+            "dbpedia_resource": "http://dbpedia.org/resource/Double-decker_bus"
+          },
+          {
+            "text": "Coffee culture",
+            "relevance": 0.487775,
+            "dbpedia_resource": "http://dbpedia.org/resource/Coffee_culture"
+          },
+          {
+            "text": "Coffeehouse",
+            "relevance": 0.472437,
+            "dbpedia_resource": "http://dbpedia.org/resource/Coffeehouse"
+          },
+          {
+            "text": "Transamerica Pyramid",
+            "relevance": 0.471222,
+            "dbpedia_resource": "http://dbpedia.org/resource/Transamerica_Pyramid"
+          }
+        ],
+        "categories": [
+          {
+            "score": 0.69523,
+            "label": "/art and entertainment/shows and events"
+          },
+          {
+            "score": 0.694095,
+            "label": "/food and drink"
+          },
+          {
+            "score": 0.651678,
+            "label": "/business and industrial/business operations/business plans"
+          }
+        ]
+      },
+      "extracted_metadata": {
+        "sha1": "9ffa59b367d943be412d4849a0f5d1a8e3014cd1",
+        "filename": "san-francisco_argonaut_hotel_a_kimpton_hotel1435.json",
+        "file_type": "json"
+      },
+      "title": "Fantastic stay at the Hotel Argonaut!"
+    }
+  ]
+}

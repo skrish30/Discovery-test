@@ -1,0 +1,4 @@
+ASSISTANT_IAM_APIKEY=1B78DRGQ3kZ4NlNguru5xYldnlC_zQDfSP_eTFIZKV7b
+ASSISTANT_URL=https://gateway-lon.watsonplatform.net/assistant/api
+DISCOVERY_IAM_APIKEY=9cS3b7ctYkaNAnn08w3wKWJF376bqvTbpOGkfwktRxbz
+DISCOVERY_URL=https://gateway-lon.watsonplatform.net/discovery/api
