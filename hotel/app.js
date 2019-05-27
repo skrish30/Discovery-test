@@ -7,7 +7,6 @@ const cfenv = require("cfenv");
 const app = express();
 const server = require("http").createServer(app);
 const io = require('socket.io')(server);
-const fs=require('fs').promises;
 const fsPromises=require('fs').promises;
 require('dotenv').config({silent: true});
 
@@ -34,7 +33,8 @@ const discovery = new DiscoveryV1({
   url: process.env.DISCOVERY_URL || 'https://gateway.watsonplatform.net/discovery/api',
 });
 
-
+const environmentID = process.env.ENVIRONMENT_ID;
+const collectionID = process.env.COLLECTION_ID;
 
 // start server on the specified port and binding host
 server.listen(appEnv.port, '0.0.0.0', function() {
@@ -51,91 +51,23 @@ app.get('/', function(req, res){
 /*****************************
     Function Definitions
 ******************************/
-function queryDiscovery(query,callback){
-  //function to query Discovery
-  let queryParams ={
-    environment_id: process.env.ENVIRONMENT_ID,
-    collection_id: process.env.COLLECTION_ID,
-    aggregation: query
-  };
-  console.log(queryParams);
-  discovery.query(queryParams)
-    .then(queryResponse =>{
-      //console.log(JSON.stringify(queryResponse, null, 2));
-      /*
-      fsPromises.writeFile("data.txt", JSON.stringify(queryResponse, null, 2))
-        .then(()=> console.log("success"))
-        .catch(()=> console.log("failure"))
-      */
-      console.log('successful query');
-      callback(null,queryResponse);
-    })
-    .catch(err =>{
-      console.log('error',err);
-      callback(err,null);
-    });
+const readDocuments = (docName,callback)=>{
+fsPromises.readFile(docName, 'utf8')
+  .then((contents)=>{
+     //console.log(contents);
+      let transcripts = contents;
+      callback(transcripts);
+  })
+  .catch((err)=> console.log(err))
 };
 
-function findBestHotels(queryResults,callback){
-  //Function to find the best hotel
+readDocuments('./doc.json',(transcript) => console.log(transcript));
 
-  let highestSent =0;
-  let currentSent;
-  let bestHotel;
-  for (let index = 0; index < queryResults.length; index++) {
-    currentSent = queryResults[index].aggregations[0].value;
-    if(currentSent > highestSent){
-      highestSent = currentSent;
-      bestHotel = queryResults[index].key;
-    }
-  }
-  callback(bestHotel, highestSent);
-}
 
 /*
-queryDiscovery("term(hotel,count:50).average(enriched_text.sentiment.document.score)", (err,queryResults) =>{
-  console.log(err+"I am here");
-  if(err){
-    console.log(err);
-  }
-
-  queryResults = queryResults.aggregations[0].results;
-  console.log(queryResults)
-  findBestHotels(queryResults, (hotel,sentiment)=>{
-      console.log( "The best hotel overall is " + hotel.replace(/_/g," ").replace(/\b\w/g, l => l.toUpperCase())  
-        + "with an average sentiment of " + sentiment.toFixed(2));
-  });
-});
-
-  
-switch(context.best){
-  case "All":
-    break;
-  case "new-york-city":
-    break;
-  case "san-francisco":
-    break;
-  case "chicago":
-    break;
-}
+const documentParams = {
+  environment_id: environmentID,
+  collection_id: collectionID,
+  file: readDocuments('./doc.json')
+};
 */
-
-context={
-  best: 'san-francisco'
-}
-
-queryDiscovery("filter(city::"+context.best+").term(hotel,count:50).average(enriched_text.sentiment.document.score)", (err,queryResults) =>{
-  console.log(err+"I am here");
-  console.log(queryResults);
-
-  if(err){
-    console.log(err);
-  }
-
-  queryResults = queryResults.aggregations[0].aggregations[0].results;
-  console.log(queryResults)
-  findBestHotels(queryResults, (hotel,sentiment)=>{
-      console.log( "The best hotel overall is " + hotel.replace(/_/g," ").replace(/\b\w/g, l => l.toUpperCase())  
-        + "with an average sentiment of " + sentiment.toFixed(2));
-  });
-});
