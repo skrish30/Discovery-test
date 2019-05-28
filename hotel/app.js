@@ -52,13 +52,12 @@ app.get('/', function(req, res){
 /*****************************
     Function Definitions
 ******************************/
-
+const discoveryUpload = (docName)=>{
 const addDocumentParams = {
   environment_id: environmentID,
   collection_id: collectionID,
-  file: fs.createReadStream('./doc.json'),
+  file: fs.createReadStream(docName),
 };
-console.log(addDocumentParams);
 
 discovery.addDocument(addDocumentParams)
   .then(documentAccepted => {
@@ -67,3 +66,6 @@ discovery.addDocument(addDocumentParams)
   .catch(err => {
     console.log('error:', err);
   });
+};
+
+discoveryUpload('./doc.json')
