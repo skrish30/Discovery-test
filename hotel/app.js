@@ -8,6 +8,7 @@ const app = express();
 const server = require("http").createServer(app);
 const io = require('socket.io')(server);
 const fsPromises=require('fs').promises;
+const fs = require('fs');
 require('dotenv').config({silent: true});
 
 //modules for V2 assistant
@@ -43,31 +44,26 @@ server.listen(appEnv.port, '0.0.0.0', function() {
 });
 
 
-
 app.get('/', function(req, res){
   res.sendFile('index.html');
 });
 
+
 /*****************************
     Function Definitions
 ******************************/
-const readDocuments = (docName,callback)=>{
-fsPromises.readFile(docName, 'utf8')
-  .then((contents)=>{
-     //console.log(contents);
-      let transcripts = contents;
-      callback(transcripts);
-  })
-  .catch((err)=> console.log(err))
-};
 
-readDocuments('./doc.json',(transcript) => console.log(transcript));
-
-
-/*
-const documentParams = {
+const addDocumentParams = {
   environment_id: environmentID,
   collection_id: collectionID,
-  file: readDocuments('./doc.json')
+  file: fs.createReadStream('./doc.json'),
 };
-*/
+console.log(addDocumentParams);
+
+discovery.addDocument(addDocumentParams)
+  .then(documentAccepted => {
+    console.log(JSON.stringify(documentAccepted, null, 2));
+  })
+  .catch(err => {
+    console.log('error:', err);
+  });
