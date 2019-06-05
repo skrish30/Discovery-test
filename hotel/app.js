@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 
 // Create the Discovery object
 const discovery = new DiscoveryV1({
-  version: '2017-08-01',
+  version: '2019-04-02',
   url: process.env.DISCOVERY_URL || 'https://gateway.watsonplatform.net/discovery/api',
 });
 
@@ -68,4 +68,25 @@ discovery.addDocument(addDocumentParams)
   });
 };
 
-discoveryUpload('./doc.json')
+//upload doc.json in the current directory
+//discoveryUpload('./doc.json')
+
+const queryParams = {
+  environment_id: process.env.ENVIRONMENT_ID,
+  collection_id: process.env.COLLECTION_ID,
+  filter: "id::\"39f38b9c1cd046d3ac50d7f8ace63fe0\""
+};
+
+discovery.query(queryParams)
+  .then(queryResponse => {
+    console.log(JSON.stringify(queryResponse, null, 2));
+  data = JSON.stringify(queryResponse, null, 2);
+    fsPromises.writeFile("data.json", data)
+	.then(()=> console.log("success"))
+	.catch(()=> console.log("failure"))
+  })
+  .catch(err => {
+    console.log('error:', err);
+  });
+
+  //id:39f38b9c1cd046d3ac50d7f8ace63fe0
