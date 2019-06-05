@@ -7,8 +7,8 @@ const cfenv = require("cfenv");
 const app = express();
 const server = require("http").createServer(app);
 const io = require('socket.io')(server);
-const fs=require('fs').promises;
 const fsPromises=require('fs').promises;
+const fs = require('fs');
 require('dotenv').config({silent: true});
 
 //modules for V2 assistant
@@ -30,11 +30,12 @@ app.use(bodyParser.json());
 
 // Create the Discovery object
 const discovery = new DiscoveryV1({
-  version: '2017-08-01',
+  version: '2019-04-02',
   url: process.env.DISCOVERY_URL || 'https://gateway.watsonplatform.net/discovery/api',
 });
 
-
+const environmentID = process.env.ENVIRONMENT_ID;
+const collectionID = process.env.COLLECTION_ID;
 
 // start server on the specified port and binding host
 server.listen(appEnv.port, '0.0.0.0', function() {
@@ -43,99 +44,49 @@ server.listen(appEnv.port, '0.0.0.0', function() {
 });
 
 
-
 app.get('/', function(req, res){
   res.sendFile('index.html');
 });
 
+
 /*****************************
     Function Definitions
 ******************************/
-function queryDiscovery(query,callback){
-  //function to query Discovery
-  let queryParams ={
-    environment_id: process.env.ENVIRONMENT_ID,
-    collection_id: process.env.COLLECTION_ID,
-    aggregation: query
-  };
-  console.log(queryParams);
-  discovery.query(queryParams)
-    .then(queryResponse =>{
-      //console.log(JSON.stringify(queryResponse, null, 2));
-      /*
-      fsPromises.writeFile("data.txt", JSON.stringify(queryResponse, null, 2))
-        .then(()=> console.log("success"))
-        .catch(()=> console.log("failure"))
-      */
-      console.log('successful query');
-      callback(null,queryResponse);
-    })
-    .catch(err =>{
-      console.log('error',err);
-      callback(err,null);
-    });
+const discoveryUpload = (docName)=>{
+const addDocumentParams = {
+  environment_id: environmentID,
+  collection_id: collectionID,
+  file: fs.createReadStream(docName),
 };
 
-function findBestHotels(queryResults,callback){
-  //Function to find the best hotel
-
-  let highestSent =0;
-  let currentSent;
-  let bestHotel;
-  for (let index = 0; index < queryResults.length; index++) {
-    currentSent = queryResults[index].aggregations[0].value;
-    if(currentSent > highestSent){
-      highestSent = currentSent;
-      bestHotel = queryResults[index].key;
-    }
-  }
-  callback(bestHotel, highestSent);
-}
-
-/*
-queryDiscovery("term(hotel,count:50).average(enriched_text.sentiment.document.score)", (err,queryResults) =>{
-  console.log(err+"I am here");
-  if(err){
-    console.log(err);
-  }
-
-  queryResults = queryResults.aggregations[0].results;
-  console.log(queryResults)
-  findBestHotels(queryResults, (hotel,sentiment)=>{
-      console.log( "The best hotel overall is " + hotel.replace(/_/g," ").replace(/\b\w/g, l => l.toUpperCase())  
-        + "with an average sentiment of " + sentiment.toFixed(2));
+discovery.addDocument(addDocumentParams)
+  .then(documentAccepted => {
+    console.log(JSON.stringify(documentAccepted, null, 2));
+  })
+  .catch(err => {
+    console.log('error:', err);
   });
-});
+};
 
-  
-switch(context.best){
-  case "All":
-    break;
-  case "new-york-city":
-    break;
-  case "san-francisco":
-    break;
-  case "chicago":
-    break;
-}
-*/
+//upload doc.json in the current directory
+//discoveryUpload('./doc.json')
 
-context={
-  best: 'san-francisco'
-}
+const queryParams = {
+  environment_id: process.env.ENVIRONMENT_ID,
+  collection_id: process.env.COLLECTION_ID,
+  filter: "id::\"39f38b9c1cd046d3ac50d7f8ace63fe0\""
+};
 
-queryDiscovery("filter(city::"+context.best+").term(hotel,count:50).average(enriched_text.sentiment.document.score)", (err,queryResults) =>{
-  console.log(err+"I am here");
-  console.log(queryResults);
-
-  if(err){
-    console.log(err);
-  }
-
-  queryResults = queryResults.aggregations[0].aggregations[0].results;
-  console.log(queryResults)
-  findBestHotels(queryResults, (hotel,sentiment)=>{
-      console.log( "The best hotel overall is " + hotel.replace(/_/g," ").replace(/\b\w/g, l => l.toUpperCase())  
-        + "with an average sentiment of " + sentiment.toFixed(2));
+discovery.query(queryParams)
+  .then(queryResponse => {
+    console.log(JSON.stringify(queryResponse, null, 2));
+  data = JSON.stringify(queryResponse, null, 2);
+    fsPromises.writeFile("data.json", data)
+	.then(()=> console.log("success"))
+	.catch(()=> console.log("failure"))
+  })
+  .catch(err => {
+    console.log('error:', err);
   });
-});
+
+  //id:39f38b9c1cd046d3ac50d7f8ace63fe0
