@@ -1,6 +1,13 @@
 {
   "matching_results": 1,
-  "session_token": "1_HCWVsI6oebag2Vf5uAmXamynRX",
+  "session_token": "1_HCWVsI6oebaI9l00_nfgfYq6Np",
+  "aggregations": [
+    {
+      "type": "sum",
+      "field": "enriched_text.categories.score",
+      "value": 1.9860250000000002
+    }
+  ],
   "results": [
     {
       "id": "39f38b9c1cd046d3ac50d7f8ace63fe0",
